@@ -1,1060 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manjeet Singh | PhD Researcher in Food Technology</title>
-  <meta
-    name="description"
-    content="Manjeet Singh - Final-year PhD researcher in Food Technology, specializing in mangrove bioactives, food quality, oxidative stability, spectroscopy, chromatography, and applied food science research."
-  />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root {
-      --bg: #07111f;
-      --bg-soft: #0f172a;
-      --surface: rgba(255, 255, 255, 0.08);
-      --surface-strong: rgba(255, 255, 255, 0.12);
-      --card: rgba(15, 23, 42, 0.72);
-      --line: rgba(255, 255, 255, 0.12);
-      --text: #e5eefb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-2: #22c55e;
-      --highlight: #f59e0b;
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-      --radius: 24px;
-      --radius-sm: 16px;
-      --max-width: 1200px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      font-family: "Inter", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 32%),
-        radial-gradient(circle at top right, rgba(34, 197, 94, 0.14), transparent 26%),
-        linear-gradient(180deg, #020817 0%, #07111f 45%, #0b1220 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
     }
 
     .container {
-      width: min(var(--max-width), calc(100% - 2rem));
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(2, 8, 23, 0.68);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    h1, h2, h3 {
+      margin-bottom: 10px;
+      line-height: 1.3;
     }
 
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 0;
-      gap: 1rem;
+    h1 {
+      font-size: 40px;
     }
 
-    .brand {
-      font-size: 1rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    h2 {
+      font-size: 26px;
+      margin-top: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 8px;
     }
 
-    .brand span {
-      color: var(--accent);
+    h3 {
+      font-size: 18px;
     }
 
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus {
-      color: var(--text);
+    p {
+      margin-bottom: 14px;
+      color: #cbd5f5;
     }
 
     .hero {
-      padding: 5rem 0 3rem;
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .hero-card,
-    .profile-card,
-    .section-card,
-    .timeline-item,
-    .publication-item,
-    .skill-group,
-    .contact-card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(18px);
-    }
-
-    .hero-card {
-      padding: 2.2rem;
-      border-radius: var(--radius);
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 0.85rem;
-      border-radius: 999px;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.24);
-      color: #bfeaff;
-      font-size: 0.84rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 6vw, 4.3rem);
-      line-height: 1.05;
-      margin-bottom: 0.8rem;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-    }
-
-    .hero h1 span {
-      color: var(--accent);
+    .hero img {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
     .subtitle {
-      font-size: clamp(1rem, 2.1vw, 1.25rem);
-      color: #c9d7e8;
-      max-width: 60ch;
-      margin-bottom: 1.4rem;
-    }
-
-    .hero-summary {
-      color: var(--muted);
-      margin-bottom: 1.6rem;
-      font-size: 1rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      margin-bottom: 1.75rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.95rem 1.2rem;
-      border-radius: 14px;
-      font-weight: 700;
-      transition: 0.25s ease;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #2563eb);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.28);
-    }
-
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text);
-      border-color: rgba(255, 255, 255, 0.12);
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .stat {
-      padding: 1rem;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-    }
-
-    .stat h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .stat p {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .profile-card {
-      padding: 1.25rem;
-      border-radius: var(--radius);
-    }
-
-    .profile-image-wrap {
-      border-radius: 22px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      margin-bottom: 1rem;
-      background: rgba(255, 255, 255, 0.04);
-    }
-
-    .profile-image {
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      width: 100%;
-    }
-
-    .profile-note {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .quick-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
-      margin-top: 1rem;
-    }
-
-    .tag {
-      padding: 0.5rem 0.8rem;
-      border-radius: 999px;
-      font-size: 0.84rem;
-      color: #d7e6f5;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    main {
-      padding-bottom: 4rem;
+      color: #94a3b8;
+      max-width: 700px;
+      margin: auto;
     }
 
     .section {
-      margin-top: 2rem;
+      margin-top: 40px;
     }
 
-    .section-heading {
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 1rem;
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
-    .section-heading h2 {
-      font-size: clamp(1.5rem, 3vw, 2.25rem);
-      letter-spacing: -0.03em;
+    ul {
+      padding-left: 18px;
     }
 
-    .section-heading p {
-      color: var(--muted);
-      max-width: 60ch;
+    li {
+      margin-bottom: 6px;
     }
 
-    .section-card {
-      border-radius: var(--radius);
-      padding: 1.5rem;
-    }
-
-    .about-grid,
-    .skills-grid,
-    .contact-grid,
-    .project-grid,
-    .pub-grid,
-    .edu-grid {
+    .grid-2 {
       display: grid;
-      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
 
-    .about-grid {
-      grid-template-columns: 1.2fr 0.8fr;
-    }
-
-    .focus-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.9rem;
-      margin-top: 1rem;
-    }
-
-    .focus-item {
-      padding: 1rem;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .focus-item h3 {
-      font-size: 1rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .focus-item p {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 1rem;
-    }
-
-    .timeline-item {
-      border-radius: 22px;
-      padding: 1.25rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      inset: auto 0 0 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), transparent);
-      opacity: 0.9;
-    }
-
-    .timeline-top {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .timeline-top h3 {
-      font-size: 1.05rem;
-    }
-
-    .timeline-top span {
-      font-size: 0.85rem;
-      color: #bfdbfe;
-      background: rgba(37, 99, 235, 0.15);
-      border: 1px solid rgba(59, 130, 246, 0.2);
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
-
-    .timeline-meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .timeline-item ul {
-      padding-left: 1.1rem;
-      color: #d6e2ef;
-    }
-
-    .timeline-item li + li {
-      margin-top: 0.4rem;
-    }
-
-    .edu-grid,
-    .project-grid,
-    .pub-grid,
-    .contact-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .mini-card {
-      padding: 1.2rem;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .mini-card h3 {
-      margin-bottom: 0.45rem;
-      font-size: 1.02rem;
-    }
-
-    .mini-card p,
-    .mini-card li {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .mini-card ul {
-      padding-left: 1rem;
-      margin-top: 0.6rem;
-    }
-
-    .skills-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .skill-group {
-      padding: 1.2rem;
-      border-radius: 22px;
-    }
-
-    .skill-group h3 {
-      margin-bottom: 0.7rem;
-      font-size: 1rem;
-    }
-
-    .skill-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-    }
-
-    .skill-pills span {
-      padding: 0.5rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.86rem;
-      color: #dbeafe;
-    }
-
-    .publication-item {
-      padding: 1.25rem;
-      border-radius: 22px;
-    }
-
-    .publication-item.featured {
-      outline: 1px solid rgba(56, 189, 248, 0.3);
-      background: linear-gradient(180deg, rgba(56, 189, 248, 0.08), rgba(255, 255, 255, 0.04));
-    }
-
-    .publication-label {
+    .skills span {
       display: inline-block;
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 0.35rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(34, 197, 94, 0.12);
-      color: #bbf7d0;
-      margin-bottom: 0.8rem;
-      border: 1px solid rgba(34, 197, 94, 0.2);
+      background: #334155;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 13px;
     }
 
-    .publication-item h3 {
-      font-size: 1.05rem;
-      margin-bottom: 0.55rem;
+    .contact a {
+      color: #38bdf8;
+      display: block;
+      margin-bottom: 6px;
     }
 
-    .publication-item p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .contact-card {
-      padding: 1.2rem;
-      border-radius: 22px;
-    }
-
-    .contact-card h3 {
-      margin-bottom: 0.45rem;
-    }
-
-    .contact-card p,
-    .contact-card a {
-      color: var(--muted);
-      word-break: break-word;
-    }
-
-    footer {
-      padding: 2rem 0 3rem;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 1024px) {
-      .hero-grid,
-      .about-grid,
-      .skills-grid,
-      .edu-grid,
-      .project-grid,
-      .pub-grid,
-      .contact-grid {
+    @media(max-width: 768px) {
+      .grid-2 {
         grid-template-columns: 1fr;
-      }
-
-      .stats {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 720px) {
-      .hero {
-        padding-top: 3.5rem;
-      }
-
-      .nav-inner {
-        flex-direction: column;
-        align-items: start;
-      }
-
-      .stats,
-      .focus-list {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-card,
-      .profile-card,
-      .section-card {
-        padding: 1.2rem;
-      }
-
-      .timeline-top {
-        flex-direction: column;
       }
     }
   </style>
 </head>
+
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="brand">Manjeet <span>Singh</span></a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<div class="container">
+
+  <div class="hero">
+    <img src="assets/profile.jpg" alt="Profile">
+    <h1>Manjeet Singh</h1>
+    <p class="subtitle">PhD Researcher in Food Technology | Mangrove Bioactives | Food Quality & Analytical Science</p>
+  </div>
+
+  <div class="section">
+    <h2>About</h2>
+    <p>
+      Final-year PhD researcher in Food Technology at Université d’Artois, France. My work focuses on the valorisation of mangrove-derived bioactive compounds, especially polyphenols, and their role in improving oxidative stability and nutritional performance in food systems such as oils, seafood, and cereal-based products.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Field Research – Kenya</h3>
+      <p>University of Nairobi | 2025</p>
+      <ul>
+        <li>Mangrove sampling and species identification</li>
+        <li>Sample preservation and export compliance</li>
+      </ul>
     </div>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-card">
-          <div class="eyebrow">Final-Year PhD Researcher | France</div>
-          <h1>Food Technology, <span>Mangrove Bioactives</span> & Applied Research</h1>
-          <p class="subtitle">
-            I work on the valorisation of mangrove-derived resources for food applications,
-            with a focus on polyphenol extraction, food quality, oxidative stability,
-            spectroscopy, chromatography, and interdisciplinary scientific research.
-          </p>
-          <p class="hero-summary">
-            With research experience across France, Spain, Belgium, India, Kenya, and Nigeria,
-            I combine analytical chemistry, food science, and data-driven interpretation to study
-            how bioactive compounds can improve the stability and nutritional performance of oils,
-            seafood, and cereal-based products.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact Me</a>
-            <a class="btn btn-secondary" href="#publications">View Publications</a>
-          </div>
-
-          <div class="stats">
-            <div class="stat">
-              <h3>6+</h3>
-              <p>Countries of academic and research exposure</p>
-            </div>
-            <div class="stat">
-              <h3>1</h3>
-              <p>Published journal article</p>
-            </div>
-            <div class="stat">
-              <h3>6+</h3>
-              <p>Manuscripts under review</p>
-            </div>
-            <div class="stat">
-              <h3>10+</h3>
-              <p>Advanced analytical and research techniques</p>
-            </div>
-          </div>
-        </div>
-
-        <aside class="profile-card">
-          <div class="profile-image-wrap">
-            <!-- Replace the image path below with your uploaded GitHub image path -->
-            <img src="ManjeetPhoto.png" alt="Portrait of Manjeet Singh" class="profile-image" />
-          </div>
-          <p class="profile-note">
-            Postdoctoral and research-oriented profile in food technology, natural bioactives,
-            functional ingredients, oxidative stability, and advanced analytical characterisation.
-          </p>
-          <div class="quick-tags">
-            <span class="tag">PhD Food Technology</span>
-            <span class="tag">Mangrove Polyphenols</span>
-            <span class="tag">HPLC-MS</span>
-            <span class="tag">GC-MS</span>
-            <span class="tag">FTIR</span>
-            <span class="tag">Fluorescence</span>
-            <span class="tag">Python</span>
-            <span class="tag">Food Quality</span>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>About Me</h2>
-            <p>
-              A research profile built around food science, natural antioxidants, analytical
-              chemistry, and translational applications in food systems.
-            </p>
-          </div>
-        </div>
-
-        <div class="section-card about-grid">
-          <div>
-            <p>
-              I am a final-year PhD researcher in Food Technology at Université d’Artois, France.
-              My doctoral work focuses on the valorisation of mangrove resources and their impact
-              on food quality, particularly through the extraction and characterisation of bioactive
-              compounds such as polyphenols. I investigate how these compounds interact with food
-              matrices and improve oxidative stability and functional performance.
-            </p>
-            <br />
-            <p>
-              My work integrates chromatographic, spectroscopic, microbiological, and statistical
-              approaches, with applications in oils, seafood, and cereal-based products. I am now
-              seeking postdoctoral and research opportunities where I can contribute my expertise
-              while continuing to grow through interdisciplinary collaboration.
-            </p>
-
-            <div class="focus-list">
-              <div class="focus-item">
-                <h3>Research Focus</h3>
-                <p>Natural antioxidants, food preservation, mangrove valorisation, and food quality enhancement.</p>
-              </div>
-              <div class="focus-item">
-                <h3>Analytical Strength</h3>
-                <p>Advanced spectroscopy and chromatography for profiling bioactives and oxidation markers.</p>
-              </div>
-              <div class="focus-item">
-                <h3>Application Areas</h3>
-                <p>Edible oils, seafood preservation, cereal-based products, and functional food systems.</p>
-              </div>
-              <div class="focus-item">
-                <h3>Career Goal</h3>
-                <p>To contribute to high-impact research in food technology, natural ingredients, and sustainable innovation.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mini-card">
-            <h3>Core Profile Snapshot</h3>
-            <ul>
-              <li>PhD in Food Technology, Université d’Artois, France</li>
-              <li>MSc in Microbiology and Physicochemistry for Food and Wine Processes</li>
-              <li>International research experience in Europe, Africa, and India</li>
-              <li>Hands-on experience with extraction, fractionation, food analysis, and data interpretation</li>
-              <li>Interested in postdoctoral, R&amp;D, and research engineer opportunities</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>Experience & International Mobilities</h2>
-            <p>Selected research, industrial, and international mobility experiences shaping my scientific profile.</p>
-          </div>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-top">
-              <div>
-                <h3>International Field Research – Mangrove Sampling</h3>
-                <div class="timeline-meta">University of Nairobi, Department of Biology | Kenya</div>
-              </div>
-              <span>Nov 2025</span>
-            </div>
-            <ul>
-              <li>Conducted systematic field sampling of mangrove leaves and fruits across coastal ecosystems.</li>
-              <li>Handled species identification, preservation, and pre-processing for analytical workflows.</li>
-              <li>Managed phytosanitary compliance, export documentation, and international sample transport.</li>
-              <li>Collaborated with local research teams and coordinated field logistics.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-top">
-              <div>
-                <h3>International Field Research – Mangrove Sampling</h3>
-                <div class="timeline-meta">Federal University of Technology Akure (FUTA) | Nigeria</div>
-              </div>
-              <span>May 2025</span>
-            </div>
-            <ul>
-              <li>Executed field collection of mangrove plant materials for polyphenol extraction and food application studies.</li>
-              <li>Ensured traceability, preservation quality, and rigorous sampling protocols.</li>
-              <li>Completed phytosanitary procedures, regulatory documentation, and sample shipment workflows.</li>
-              <li>Worked with academic collaborators during field and pre-processing activities.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-top">
-              <div>
-                <h3>Research Intern – Food Biotechnology</h3>
-                <div class="timeline-meta">University of Valencia, Spain</div>
-              </div>
-              <span>Mar – Sep 2022</span>
-            </div>
-            <ul>
-              <li>Developed fortified sourdough powder formulations for industrial evaluation and scale-up.</li>
-              <li>Supported product development, quality assessment, and protocol design.</li>
-              <li>Worked in laboratory environments aligned with GMP and GLP standards.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-top">
-              <div>
-                <h3>Research Intern – Microbial Biotechnology</h3>
-                <div class="timeline-meta">TERRA Research Center, Belgium</div>
-              </div>
-              <span>Jul – Aug 2021</span>
-            </div>
-            <ul>
-              <li>Investigated stress responses of Saccharomyces cerevisiae under controlled bioprocess conditions.</li>
-              <li>Operated and monitored a 30 L laboratory-scale bioreactor.</li>
-              <li>Supported media preparation, culture handling, and experimental workflows.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-top">
-              <div>
-                <h3>Quality Control Intern – Beverage Production</h3>
-                <div class="timeline-meta">Coca-Cola, India</div>
-              </div>
-              <span>Jun – Jul 2019</span>
-            </div>
-            <ul>
-              <li>Performed physicochemical quality analysis including Brix, pH, and CO₂ monitoring.</li>
-              <li>Gained exposure to HACCP, CIP systems, and industrial quality control processes.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>Education</h2>
-            <p>Academic training across food technology, microbiology, physicochemistry, and applied food science.</p>
-          </div>
-        </div>
-
-        <div class="section-card edu-grid">
-          <div class="mini-card">
-            <h3>PhD in Food Technology</h3>
-            <p>Université d’Artois, France | 2023–2026</p>
-            <ul>
-              <li>Topic: Valorisation of mangrove resources and their impact on food quality</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>MSc in Microbiology and Physicochemistry for Food and Wine Processes</h3>
-            <p>University of Burgundy (AgroSup), France | 2020–2022</p>
-            <ul>
-              <li>Erasmus+ Exchange: University of Liège, Belgium</li>
-              <li>Erasmus+ Thesis Internship: University of Valencia, Spain</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>B.Tech in Food Technology</h3>
-            <p>Shoolini University of Biotechnology and Management Sciences, India | 2016–2020</p>
-          </div>
-
-          <div class="mini-card">
-            <h3>Research Orientation</h3>
-            <p>Food quality, natural bioactives, functional ingredients, food processing, and laboratory-based research.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>Projects</h2>
-            <p>Selected academic and research projects reflecting my development in food technology and biotechnology.</p>
-          </div>
-        </div>
-
-        <div class="section-card project-grid">
-          <div class="mini-card">
-            <h3>PhD Thesis</h3>
-            <p>Contribution to the valorization of resources from mangroves in food technology.</p>
-            <ul>
-              <li>Supervisor: Prof. Romdhane Karoui</li>
-              <li>Institution: Université d’Artois, France</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>Master Thesis</h3>
-            <p>Dry sourdoughs inoculated with lactic acid bacteria for bread biopreservation, quality analysis, and regulations.</p>
-            <ul>
-              <li>Supervisor: Dr. Giuseppe Meca</li>
-              <li>Institution: University of Valencia, Spain</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>Food Safety Project</h3>
-            <p>Use of visible light and UV for decontamination of food and surfaces against HuNoV using MS2 bacteriophage as surrogate.</p>
-            <ul>
-              <li>Supervisor: Prof. Stephane Guyot</li>
-              <li>Institution: PAM UMR Lab, AgroSup Dijon, France</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>Bioprocessing & Fermentation</h3>
-            <p>Stress condition verification in yeast and fermentation-focused biotechnology research.</p>
-            <ul>
-              <li>Supervisor: Dr. Frank Delvigne</li>
-              <li>Institution: University of Liège, Belgium</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>Alternate Protein</h3>
-            <p>Study of insect proteins, product formulation, and market evaluation.</p>
-            <ul>
-              <li>Supervisor: Prof. Camille Loupaic</li>
-              <li>Institution: University of Burgundy, France</li>
-            </ul>
-          </div>
-
-          <div class="mini-card">
-            <h3>Microalgae & Sensory Analysis</h3>
-            <p>Spirulina and algae from formulation to consumer-oriented evaluation.</p>
-            <ul>
-              <li>Supervisor: Prof. Camille Loupaic</li>
-              <li>Institution: University of Burgundy, France</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publications">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>Publications</h2>
-            <p>Published and ongoing scientific writing focused on mangrove bioactives, food quality, and analytical methods.</p>
-          </div>
-        </div>
-
-        <div class="pub-grid">
-          <article class="publication-item featured">
-            <div class="publication-label">Published</div>
-            <h3>Monitoring of Antioxidant Efficacy of Mangrove-Derived Polyphenols in Linseed Oil by Physicochemical and Fluorescence Methods</h3>
-            <p>Singh, M.; Botosoa, E.; Karoui, R. <em>Antioxidants</em>, 2025, 14(2), 192.</p>
-            <p style="margin-top: 0.75rem; color: #dbeafe;">DOI: <a href="https://doi.org/10.3390/antiox14020192" target="_blank" rel="noreferrer">10.3390/antiox14020192</a></p>
-          </article>
-
-          <article class="publication-item">
-            <div class="publication-label" style="background: rgba(245, 158, 11, 0.12); color: #fde68a; border-color: rgba(245, 158, 11, 0.2);">Under Review</div>
-            <h3>Selected Manuscripts Under Review</h3>
-            <p>Innovative use of mangrove leaf extracts for sea bream fillet preservation.</p>
-            <p>Multimodal spectroscopic and UHPLC characterization of mangrove polyphenols in linseed oil stability.</p>
-            <p>Integrated targeted and library-assisted profiling of phenolic compounds using GC–MS.</p>
-            <p>Physicochemical characterisation of mangrove leaf powders and rapid FT-MIR monitoring.</p>
-            <p>Potential sources of bioactive compounds extracted from mangroves for healthy food products.</p>
-            <p>Chromatographic prowess in unraveling mangrove biomolecules using HPLC and GC analysis.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>Skills & Technical Expertise</h2>
-            <p>A combination of laboratory, analytical, statistical, and transferable research skills.</p>
-          </div>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Analytical & Instrumentation</h3>
-            <div class="skill-pills">
-              <span>HPLC-MS</span>
-              <span>GC-MS</span>
-              <span>FTIR Spectroscopy</span>
-              <span>Fluorescence Spectroscopy</span>
-              <span>UV-Vis Spectroscopy</span>
-              <span>NMR (Spin-Solve)</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Food & Biochemical Analysis</h3>
-            <div class="skill-pills">
-              <span>Antioxidant Assays</span>
-              <span>Food Formulation</span>
-              <span>Physicochemical Analysis</span>
-              <span>Phenolic Extraction</span>
-              <span>Fractionation</span>
-              <span>Oxidative Stability</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Microbiology & Processing</h3>
-            <div class="skill-pills">
-              <span>Microbial Culture</span>
-              <span>Fermentation</span>
-              <span>Sensory Analysis</span>
-              <span>Bioprocess Monitoring</span>
-              <span>Food Safety</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Data Analysis & Programming</h3>
-            <div class="skill-pills">
-              <span>Python</span>
-              <span>XLSTAT</span>
-              <span>Infostat</span>
-              <span>Basic MATLAB</span>
-              <span>Scientific Data Analysis</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Professional Skills</h3>
-            <div class="skill-pills">
-              <span>Scientific Communication</span>
-              <span>Teamwork</span>
-              <span>Leadership</span>
-              <span>Problem Solving</span>
-              <span>Risk Analysis</span>
-              <span>Conflict Resolution</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <h3>Research Themes</h3>
-            <div class="skill-pills">
-              <span>Mangrove Valorisation</span>
-              <span>Natural Antioxidants</span>
-              <span>Food Quality</span>
-              <span>Functional Ingredients</span>
-              <span>Sustainable Food Innovation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <h2>Contact</h2>
-            <p>Open to postdoctoral, research, and collaborative opportunities in food technology and related areas.</p>
-          </div>
-        </div>
-
-        <div class="section-card contact-grid">
-          <div class="contact-card">
-            <h3>Email</h3>
-            <a href="mailto:ammys6362@gmail.com">ammys6362@gmail.com</a>
-          </div>
-          <div class="contact-card">
-            <h3>Phone</h3>
-            <a href="tel:+330751902083">+33 07 51 90 20 83</a>
-          </div>
-          <div class="contact-card">
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/manjeet6362" target="_blank" rel="noreferrer">linkedin.com/in/manjeet6362</a>
-          </div>
-          <div class="contact-card">
-            <h3>Current Base</h3>
-            <p>France</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 Manjeet Singh — Research Profile Website</p>
+    <div class="card">
+      <h3>Field Research – Nigeria</h3>
+      <p>FUTA | 2025</p>
+      <ul>
+        <li>Collection for polyphenol extraction studies</li>
+        <li>Sampling traceability and logistics</li>
+      </ul>
     </div>
-  </footer>
+
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>PhD Food Technology</h3>
+        <p>Université d’Artois (2023–2026)</p>
+      </div>
+      <div class="card">
+        <h3>MSc Food Science</h3>
+        <p>University of Burgundy (2020–2022)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Publications</h2>
+    <div class="card">
+      <p>
+        Monitoring of Antioxidant Efficacy of Mangrove-Derived Polyphenols in Linseed Oil.
+        <br><strong>Antioxidants, 2025</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HPLC-MS</span>
+      <span>GC-MS</span>
+      <span>FTIR</span>
+      <span>Fluorescence</span>
+      <span>Python</span>
+      <span>Food Analysis</span>
+    </div>
+  </div>
+
+  <div class="section contact">
+    <h2>Contact</h2>
+    <a href="mailto:ammys6362@gmail.com">ammys6362@gmail.com</a>
+    <a href="https://www.linkedin.com/in/manjeet6362">LinkedIn</a>
+  </div>
+
+</div>
+
 </body>
 </html>
